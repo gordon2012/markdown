@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --inline --hot --progress --colors",
-    "production": "webpack -p"
+    "build": "webpack -p",
+    "deploy:stage": "npm run build && gh-pages -d dist",
+    "deploy:prod": "npm run build && surge dist markdown.gordondoskas.com"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,7 @@
     "babel-loader": "^6.2.4",
     "babel-preset-react": "^6.5.0",
     "css-loader": "^0.23.1",
+    "gh-pages": "^0.12.0",
     "html-webpack-plugin": "^2.16.0",
     "node-sass": "^3.6.0",
     "sass-loader": "^3.2.0",
