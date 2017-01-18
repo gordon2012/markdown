@@ -1,10 +1,9 @@
-# Markdown Preview
+# Markdown Previewer
 
-A React project for FreeCodeCamp
+A live, styled markdown editor
 
-## TODO:
+Technologies used: React, Marked, Webpack
 
-## DONE:
-- initial commit
-	- add missing script
-- refactor out components
+### Users can:
+- type GitHub-flavored Markdown into a text area
+- see a preview of the output of the markdown that is updated while typing
